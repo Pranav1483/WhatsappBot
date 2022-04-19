@@ -4,7 +4,7 @@ import time
 import pandas as pd
 data = pd.read_csv("Data.csv")
 data_dict = data.to_dict('list')
-leads = data_dict['LeadNumber']
+leads = data_dict['Number']
 messages = data_dict['Message']
 combo = zip(leads, messages)
 first = True
